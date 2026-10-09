@@ -32,7 +32,7 @@ claims_sql_pipeline/
 ```bash
 python -m pip install pandas tabulate --break-system-packages   # if not installed
 python generate_synthetic_data.py   # builds data/claims_data.db
-python run_pipeline.py              # applies views + runs queries -> pipeline_results.md
+python run_pipeline.py > pipeline_results.md    # applies views + runs queries -> pipeline_results.md
 ```
 
 Re-running `generate_synthetic_data.py` reseeds the same synthetic dataset so that results are reproducible.
